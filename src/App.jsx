@@ -1,6 +1,8 @@
 import { useState, useMemo } from 'react';
 import Flag from './Flag.jsx';
 import AnswerBox from './AnswerBox.jsx';
+import Hint from './Hint.jsx';
+import Answer from './Answer.jsx';
 
 // Fetch the country data from the json file
 async function getCountryData() {
@@ -39,6 +41,8 @@ export default function App() {
   const [inputValue, setInputValue] = useState('');
   const [score, setScore] = useState(0)
   const flagsCount = useMemo(() => unguessedCountries.length, []) // Using an empty dependency array to make sure our flagsCount never changes 
+  const [hintVisible, setHintVisible] = useState(false);
+  const [answerVisible, setAnswerVisible] = useState(false);
 
   function displayNextFlag() {
     setCurrentCountryIndex(currentCountryIndex+1)
@@ -51,12 +55,11 @@ export default function App() {
   }
 
   function checkGuess(input) {
-    // console.log(`${countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim()} === ${input.toLowerCase().trim()}`)
-
-    // If the guess is correct
-    if (countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim() === input.toLowerCase().trim()) {
+    let correct = countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim() === input.toLowerCase().trim();
+    if (correct) {
       setScore(score+1);
 
+      setHintVisible(false)
       let prevCountryIndex = currentCountryIndex;
       displayNextFlag();
       unguessedCountries.splice(prevCountryIndex, 1)
@@ -73,11 +76,13 @@ export default function App() {
     <>
       <Flag country={unguessedCountries[currentCountryIndex]} />
       <div>
-        <button type="button" onClick={displayPrevFlag} >Prev</button>
-        <button type="button" onClick={displayNextFlag} >Next</button>
+        <button type="button" onClick={displayPrevFlag}>Prev</button>
+        <button type="button" onClick={displayNextFlag}>Next</button>
       </div>
       <AnswerBox onChange={handleInputChange} inputValue={inputValue} />
       <p>Score: {score}/{flagsCount}</p>
+      <Hint countryCode={unguessedCountries[currentCountryIndex]} hintVisible={hintVisible} toggleHint={() => setHintVisible(!hintVisible)}/>
+      <Answer answerVisible={answerVisible} showAnswer={() => setAnswerVisible(true)}>{countryData[unguessedCountries[currentCountryIndex]]}</Answer>
     </>
   );
 }
