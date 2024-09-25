@@ -51,8 +51,7 @@ export default function App() {
   }
 
   function checkGuess(input) {
-    // console.log("Checking Guess!")
-    console.log(`${countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim()} === ${input.toLowerCase().trim()}`)
+    // console.log(`${countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim()} === ${input.toLowerCase().trim()}`)
 
     // If the guess is correct
     if (countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim() === input.toLowerCase().trim()) {
