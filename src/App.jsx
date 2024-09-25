@@ -12,7 +12,7 @@ async function getCountryData() {
 const countryData = await getCountryData();
 
 // This will be our working array
-let unguessedCountries = [];
+const unguessedCountries = [];
 
 // Game setup
 function setUpGame() {
@@ -50,8 +50,24 @@ export default function App() {
     if (currentCountryIndex <= 0) setCurrentCountryIndex(unguessedCountries.length - 1);
   }
 
-  function checkGuess() {
+  function checkGuess(input) {
+    // console.log("Checking Guess!")
+    console.log(`${countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim()} === ${input.toLowerCase().trim()}`)
 
+    // If the guess is correct
+    if (countryData[unguessedCountries[currentCountryIndex]].toLowerCase().trim() === input.toLowerCase().trim()) {
+      setScore(score+1);
+
+      let prevCountryIndex = currentCountryIndex;
+      displayNextFlag();
+      unguessedCountries.splice(prevCountryIndex, 1)
+      setInputValue('');
+    }
+  }
+
+  function handleInputChange(event) {
+    setInputValue(event.target.value);
+    checkGuess(event.target.value);
   }
 
   return (
@@ -61,7 +77,7 @@ export default function App() {
         <button type="button" onClick={displayPrevFlag} >Prev</button>
         <button type="button" onClick={displayNextFlag} >Next</button>
       </div>
-      <AnswerBox onChange={setInputValue} />
+      <AnswerBox onChange={handleInputChange} inputValue={inputValue} />
       <p>Score: {score}/{flagsCount}</p>
     </>
   );

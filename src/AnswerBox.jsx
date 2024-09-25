@@ -1,5 +1,5 @@
-export default function AnswerBox({onChange}) {
+export default function AnswerBox({onChange, inputValue}) {
     return (
-        <input type="text" className="d-block mt-5px" onChange={(event) => onChange(event.target.value)} />
+        <input type="text" className="d-block mt-5px" onChange={onChange} value={inputValue} />
     );
 }
