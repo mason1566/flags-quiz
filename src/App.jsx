@@ -55,7 +55,7 @@ export default function App() {
                           giveUpFunction={() => setIsGameOver(true)} 
                           score={score} 
                           setScore={setScore} />) 
-        || <EndScreen score={score} totalFlags={totalFlags} />}
+        || <EndScreen score={score} totalFlags={totalFlags} countryData={countryData} />}
       
       
     </>
