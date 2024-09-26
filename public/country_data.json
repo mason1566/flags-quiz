@@ -16,7 +16,8 @@
     },
     "ag": {
         "names": [
-            "Antigua and Barbuda"
+            "Antigua and Barbuda",
+            "Antigua & Barbuda"
         ]
     },
     "ai": {
@@ -82,7 +83,8 @@
     },
     "ba": {
         "names": [
-            "Bosnia and Herzegovina"
+            "Bosnia and Herzegovina",
+            "Bosnia & Herzegovina"
         ]
     },
     "bb": {
@@ -128,7 +130,9 @@
     "bl": {
         "names": [
             "Saint Barthélemy",
-            "Saint Barthelemy"
+            "Saint Barthelemy",
+            "St Barthélemy",
+            "St Barthelemy"
         ]
     },
     "bm": {
@@ -265,7 +269,9 @@
     },
     "cv": {
         "names": [
-            "Cape Verde"
+            "Cape Verde",
+            "Cabo Verde",
+            "Republic of Cabo Verde"
         ]
     },
     "cw": {
@@ -366,7 +372,8 @@
     },
     "fk": {
         "names": [
-            "Falkland Islands"
+            "Falkland Islands",
+            "Islas Malvinas"
         ]
     },
     "fm": {
@@ -426,7 +433,8 @@
     },
     "gf": {
         "names": [
-            "French Guiana"
+            "French Guiana",
+            "French Guyane"
         ]
     },
     "gg": {
@@ -621,7 +629,10 @@
     },
     "kn": {
         "names": [
-            "Saint Kitts and Nevis"
+            "Saint Kitts and Nevis",
+            "St Kitts and Nevis",
+            "Saint Kitts & Nevis",
+            "St Kitts & Nevis"
         ]
     },
     "kp": {
@@ -923,7 +934,10 @@
     },
     "pm": {
         "names": [
-            "Saint Pierre and Miquelon"
+            "Saint Pierre and Miquelon",
+            "Saint Pierre & Miquelon",
+            "St Pierre and Miquelon",
+            "St Pierre & Miquelon"
         ]
     },
     "pn": {
@@ -963,7 +977,9 @@
     },
     "re": {
         "names": [
-            "Réunion"
+            "Réunion",
+            "Reunion",
+            "Reunion Island"
         ]
     },
     "ro": {
@@ -1064,7 +1080,10 @@
     },
     "st": {
         "names": [
-            "São Tomé and Príncipe"
+            "São Tomé and Príncipe",
+            "Sao Tome and Principe",
+            "São Tomé & Príncipe",
+            "Sao Tome & Principe"
         ]
     },
     "sv": {
@@ -1090,7 +1109,8 @@
     },
     "tc": {
         "names": [
-            "Turks and Caicos Islands"
+            "Turks and Caicos Islands",
+            "Turks & Caicos Islands"
         ]
     },
     "td": {
@@ -1100,7 +1120,8 @@
     },
     "tf": {
         "names": [
-            "French Southern and Antarctic Lands"
+            "French Southern and Antarctic Lands",
+            "French Southern & Antarctic Lands"
         ]
     },
     "tg": {
@@ -1150,7 +1171,8 @@
     },
     "tt": {
         "names": [
-            "Trinidad and Tobago"
+            "Trinidad and Tobago",
+            "Trinidad & Tobago"
         ]
     },
     "tv": {
@@ -1209,7 +1231,8 @@
     },
     "vc": {
         "names": [
-            "Saint Vincent and the Grenadines"
+            "Saint Vincent and the Grenadines",
+            "Saint Vincent & the Grenadines"
         ]
     },
     "ve": {
@@ -1224,7 +1247,8 @@
     },
     "vi": {
         "names": [
-            "United States Virgin Islands"
+            "United States Virgin Islands",
+            "US Virgin Islands"
         ]
     },
     "vn": {
@@ -1239,7 +1263,8 @@
     },
     "wf": {
         "names": [
-            "Wallis and Futuna"
+            "Wallis and Futuna",
+            "Wallis & Futuna"
         ]
     },
     "ws": {

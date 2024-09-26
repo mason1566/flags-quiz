@@ -1,3 +1,4 @@
+/* class Styling */
 .d-block {
     display: block;
 }
@@ -16,4 +17,9 @@
 
 .align-center {
     align-items: center;
+}
+
+/* Element Styling */
+table {
+    
 }

@@ -4,7 +4,7 @@ export default function Hint({children, answerVisible, showAnswer}) {
     return (
         <>
             <button className='d-block' type="button" onClick={showAnswer}>Answer</button>
-            {answerVisible && <strong>{children}</strong>}
+            {answerVisible && <p><strong>{children}</strong></p>}
         </>
     );
     

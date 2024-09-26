@@ -10,21 +10,19 @@ export default function EndScreen({score, totalFlags, countryData}) {
     }
 
     let countries = countryCodes.map(code => (
-        <li key={code}>
-            <div className="flex-row align-center">
-                <span>{countryData[code]["names"][0]}</span>
-                <Flag country={code} height='80px' className="ml-5px mt-5px" />
-            </div>
-        </li>
+        <tr>
+            <th className="flex-row"><span>{countryData[code]["names"][0]}:</span></th>
+            <td className="flex-row align-center"><Flag country={code} height='80px' className="mt-5px" /></td>
+        </tr>
     ))
 
 
     return (
         <>
             <h1>You got {score}/{totalFlags}!</h1>
-            <ul>
-                {countries}
-            </ul>
+            <table>
+                <tbody>{countries}</tbody>
+            </table>
         </>
     );
 }

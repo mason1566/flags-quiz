@@ -42,7 +42,6 @@ export default function Game({ unguessedCountries, countryData, giveUpFunction, 
 
             setHintVisible(false)
             let prevCountryIndex = currentCountryIndex;
-            displayNextFlag();
             unguessedCountries.splice(prevCountryIndex, 1)
             setInputValue('');
         }
