@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import Flag from './Flag.jsx';
 import AnswerBox from './AnswerBox.jsx';
 import Hint from './Hint.jsx';
