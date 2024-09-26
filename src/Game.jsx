@@ -4,10 +4,9 @@ import AnswerBox from './AnswerBox.jsx';
 import Hint from './Hint.jsx';
 import Answer from './Answer.jsx';
 
-export default function Game({ unguessedCountries, countryData, giveUpFunction }) {
+export default function Game({ unguessedCountries, countryData, giveUpFunction, score, setScore }) {
     const [currentCountryIndex, setCurrentCountryIndex] = useState(0);
     const [inputValue, setInputValue] = useState('');
-    const [score, setScore] = useState(0)
     /* const flagsCount = useMemo(() => unguessedCountries.length, []) // Using an empty dependency array to make sure our flagsCount never changes */
     const [flagsCount, setFlagsCount] = useState(unguessedCountries.length);
     const [hintVisible, setHintVisible] = useState(false);

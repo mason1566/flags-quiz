@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import Game from './Game.jsx';
 import EndScreen from './EndScreen.jsx';
 
@@ -44,10 +44,20 @@ setUpGame();
 
 export default function App() {
   const [isGameOver, setIsGameOver] = useState(false);
-  
+  const [score, setScore] = useState(0);
+  const totalFlags = useMemo(() => unguessedCountries.length, [])
+
   return (
     <>
-      {(!isGameOver && <Game unguessedCountries={unguessedCountries} countryData={countryData} giveUpFunction={() => setIsGameOver(true)} />) || <EndScreen />}
+      {(!isGameOver && <Game 
+                          unguessedCountries={unguessedCountries} 
+                          countryData={countryData} 
+                          giveUpFunction={() => setIsGameOver(true)} 
+                          score={score} 
+                          setScore={setScore} />) 
+        || <EndScreen score={score} totalFlags={totalFlags} />}
+      
+      
     </>
   );
 }
