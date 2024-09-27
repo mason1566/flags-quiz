@@ -6,7 +6,8 @@
     },
     "ae": {
         "names": [
-            "United Arab Emirates"
+            "United Arab Emirates",
+            "UAE"
         ]
     },
     "af": {
@@ -205,7 +206,8 @@
     "cd": {
         "names": [
             "DR Congo",
-            "Democratic Republic of Congo"
+            "Democratic Republic of Congo",
+            "Congo-Kinshasa"
         ]
     },
     "cf": {
@@ -216,7 +218,9 @@
     },
     "cg": {
         "names": [
-            "Republic of the Congo"
+            "Republic of the Congo",
+            "Congo Republic",
+            "Congo Brazzaville"
         ]
     },
     "ch": {
@@ -398,25 +402,27 @@
     },
     "gb": {
         "names": [
-            "United Kingdom"
+            "United Kingdom",
+            "UK",
+            "Great Britain"
         ]
     },
-    "gb-eng": {
+    "eng": {
         "names": [
             "England"
         ]
     },
-    "gb-nir": {
+    "nir": {
         "names": [
             "Northern Ireland"
         ]
     },
-    "gb-sct": {
+    "sct": {
         "names": [
             "Scotland"
         ]
     },
-    "gb-wls": {
+    "wls": {
         "names": [
             "Wales"
         ]
@@ -672,7 +678,8 @@
     },
     "lc": {
         "names": [
-            "Saint Lucia"
+            "Saint Lucia",
+            "St Lucia"
         ]
     },
     "li": {
@@ -1110,7 +1117,9 @@
     "tc": {
         "names": [
             "Turks and Caicos Islands",
-            "Turks & Caicos Islands"
+            "Turks & Caicos Islands",
+            "Turks and Caicos",
+            "Turks & Caicos"
         ]
     },
     "td": {
@@ -1202,7 +1211,8 @@
     },
     "um": {
         "names": [
-            "United States Minor Outlying Islands"
+            "United States Minor Outlying Islands",
+            "US Minor Outlying Islands"
         ]
     },
     "us": {
@@ -1232,7 +1242,9 @@
     "vc": {
         "names": [
             "Saint Vincent and the Grenadines",
-            "Saint Vincent & the Grenadines"
+            "Saint Vincent & the Grenadines",
+            "St Vincent and the Grenadines",
+            "St Vincent & the Grenadines"
         ]
     },
     "ve": {

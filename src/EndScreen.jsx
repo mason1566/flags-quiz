@@ -10,7 +10,7 @@ export default function EndScreen({score, totalFlags, countryData}) {
     }
 
     let countries = countryCodes.map(code => (
-        <tr>
+        <tr key={code}>
             <th className="flex-row"><span>{countryData[code]["names"][0]}:</span></th>
             <td className="flex-row align-center"><Flag country={code} height='80px' className="mt-5px" /></td>
         </tr>

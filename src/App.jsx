@@ -52,9 +52,10 @@ export default function App() {
       {(!isGameOver && <Game 
                           unguessedCountries={unguessedCountries} 
                           countryData={countryData} 
-                          giveUpFunction={() => setIsGameOver(true)} 
+                          endGameFunction={() => setIsGameOver(true)} 
                           score={score} 
-                          setScore={setScore} />) 
+                          setScore={setScore}
+                          totalFlags={totalFlags} />) 
         || <EndScreen score={score} totalFlags={totalFlags} countryData={countryData} />}
       
       
